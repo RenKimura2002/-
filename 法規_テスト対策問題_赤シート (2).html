@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>暗記練習</title>
+    <style>
+        .hidden-word {
+            color: transparent;
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        .hidden-word:hover {
+            color: red;
+        }
+        .visible {
+            color: red;
+            text-decoration: none;
+        }
+        .fixed-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+    <script>
+        function toggleVisibility() {
+            const words = document.querySelectorAll('.hidden-word');
+            words.forEach(word => {
+                word.classList.toggle('visible');
+            });
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                toggleVisibility();
+            }
+        });
+    </script>
+</head>
+<body>
+    <button class="fixed-button" onclick="toggleVisibility()">単語を表示/隠す</button>
+    <p class="hidden-word">
+    <p class="hidden-word">
+</body>
+</html>
+
+
+
+    <p>ーーーーーーーー工学ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーEnterを押すと単語を表示</p>
+    <p>・C/N値に対するBERの関係は、多値化に伴って<span class="hidden-word">高いC/N値</span>が必要となる。よって、BERを維持するためには<span class="hidden-word">送信電力の増強</span>や<span class="hidden-word">高利得アンテナ</span>の使用、通信距離を<span class="hidden-word">短くする</span>などが求められる</p>
+    <p>・この64QAMは、<span class="hidden-word">1回</span>の変調で<span class="hidden-word">6ビット</span>の情報を送ることができる。</p>
+    <p>・<span class="hidden-word">OFDM</span>は高速の<span class="hidden-word">ビット列</span>を<span class="hidden-word">多数のキャリア</span>を用いて周波数上で分散して伝送することで、キャリア1本当たりの変調速度を<span class="hidden-word">低く</span>して、遅延波を軽減する。</p>
+    <p>・スペクトルが<span class="hidden-word">お互いに干渉を与えず独立</span>していることを<span class="hidden-word">直交関係</span>という。スペクトルが<span class="hidden-word"> 0 </span>の点は隣接のキャリア周波数に<span class="hidden-word">一致</span>する。この点は、隣接キャリアのレベルが<span class="hidden-word">最大</span>の点である。</p>
+    <p>・等価雑音温度は<span class="hidden-word">温度</span>の影響を受ける。</p>
+    ・<span class="hidden-word">CDMA</span>の遠近問題とは、各携帯端末が<span class="hidden-word">同じ</span>周波数で送信することが多いので、<span class="hidden-word">遠く</span>の携帯端末の<span class="hidden-word">弱い</span>信号が、基地局に<span class="hidden-word">近い</span>携帯端末の<span class="hidden-word">強い</span>信号に、埋もれて基地局で<span class="hidden-word">受信できない</span>現象である。</p>
+<p>・これを解決するための、<span class="hidden-word">送信電力制御</span>とは、携帯端末の送信電力を基地局からの下回り回線で制御することである。</p><p>・<span class="hidden-word">RAKE</span>受信には<span class="hidden-word">最大比合成機能</span>がある。</p>
+<p>・周回衛星において、装置の<span class="hidden-word">小型化</span>を図り移動体通信に通信衛星を利用するためには、伝搬損失が<span class="hidden-word">少な</span>い<span class="hidden-word">低軌道</span>に衛星を打ち上げればよいが、高度を維持するために衛星の集会速度を<span class="hidden-word">速く</span>しなければいけないので静止衛星ではなくなる。<span class="hidden-word">低軌道</span>（LEO）の周回衛星では、地球上の1点から当該衛星を見通せる時間は<span class="hidden-word">短時間</span>となる。移動端末局は<span class="hidden-word">小型軽量のハンディタイプ</span>の端末で対応できるというメリットがある。</p><p>・<span class="hidden-word">ヘテロダイン</span>中継方式とは、受信されたマイクロ波を<span class="hidden-word">中間周波数</span>に変換し、数10db程度の<span class="hidden-word">増幅</span>を行った後、再びマイクロ波に変換し、増幅器で必要な電力まで増幅する。特徴として、<span class="hidden-word">変調</span>や<span class="hidden-word">復調</span>が中継ごとに繰り返されないので、<span class="hidden-word">変調</span>によって起きる<span class="hidden-word">ひずみ</span>が相加されない</p><p>・<span class="hidden-word">再生中継</span>方式とは、中継の際に、受信波を<span class="hidden-word">復調</span>して元のビデオ信号に<span class="hidden-word">戻した</span>後に<span class="hidden-word">増幅</span>し、再び<span class="hidden-word">変調</span>を行って<span class="hidden-word">再発射</span>するもので、検波中継方式ともいう。</p>
+    <p>・方位誤差において、アンテナの<span class="hidden-word">サイドローブ</span>によって大きく<span class="hidden-word">誤った</span>位置に物標が表示されることがあるので、<span class="hidden-word">サイドロープ特性</span>の優れた<span class="hidden-word">アンテナ</span>を用いる必要がある。</p>
+    <p>・導波管は、<span class="hidden-word">同軸ケーブル</span>より損失が非常に<span class="hidden-word">少な</span>い、電波の<span class="hidden-word">漏れ</span>が極めて<span class="hidden-word">少な</span>い、管内に結露などが生じないように乾燥した空気を送る、<span class="hidden-word">デハイドレータ</span>が必要、振動や地震に<span class="hidden-word">弱</span>い、などの特徴がある。</p>
+    <p>・オーバーリーチは<span class="hidden-word">周波数</span>と<span class="hidden-word">矢印の向き</span>が同じものを選ぶ</p>
+<p>・<span class="hidden-word">雑音負荷測定</span>において、<span class="hidden-word">被測定伝送路</span>（多重チャネル）で全体を占有する伝送帯域に等しい帯域の雑音を取り出し、<span class="hidden-word">帯域消去フィルタ</span>（BEF）を通して被測定装置に加える。そして、<span class="hidden-word">帯域通過フィルタ</span>（BPF）をつなぐ。</p>
+<p>・携帯電話基地局は、受信専用の<span class="hidden-word">プリアンプ</span>を<span class="hidden-word">アンテナ直下</span>に設置し、<span class="hidden-word">LNA</span>で<span class="hidden-word">増幅</span>を行った後に、低損失の<span class="hidden-word">同軸ケーブル</span>で受信機へ加えることで、雑音指数の劣化を抑えている。衛星放送受信装置では、パラボラアンテナと<span class="hidden-word">LNA</span>及び<span class="hidden-word">周波数変換回路</span>を一体化することで雑音指数の劣化を抑えている。</p>
+<p>・パルス総数＝<span class="hidden-word">チャネル</span>×<span class="hidden-word">ビット</span>×<span class="hidden-word">同期パルス（フレーム用）</span></p>
+<p>・<span class="hidden-word">全波整流</span>は、半波整流に比べると<span class="hidden-word">ダイオード</span>が多くなるが、電圧や付加などが<span class="hidden-word">同じ</span>であれば、<span class="hidden-word">リブル含有率</span>が<span class="hidden-word">低く</span>なる。</p>
+    <p>・<span class="hidden-word">平滑回路</span>とは、交流を整流しただけでは脈流であるから、更に交流分を除いて直流にするための回路のことである。</p>
+
+<p>・パルス繰り返し周波数＝<span class="hidden-word">kHz</span>×(<span class="hidden-word">チャネル</span>×<span class="hidden-word">ビット</span>＋<span class="hidden-word">1ビット</span>）</p>
+<p>文章点検において重要なものは、<span class="hidden-word">送信周波数</span>、<span class="hidden-word">送信電力(空中電力）</span>、<span class="hidden-word">占有周波数帯幅</span>、<span class="hidden-word">スプリアス発射の強度</span>、<span class="hidden-word">受信機の強度</span>、である。</p>
+<p>   　
+<p>法規ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+<p>　
+    <p>・免許には2種類あり物に与えられる免許<span class="hidden-word">状</span>と、人に与えられる免許<span class="hidden-word">証</span>がある。</p>
+    <p>・電波法は、電波の<span class="hidden-word">公平</span>かつ<span class="hidden-word">能率的</span>な利用を確保することで公共の福祉を増進する。また電波の<span class="hidden-word">能率的</span>な利用とは、電波を<span class="hidden-word">最も効果的</span>に用することである。</p>
+    <p>・無線従事者とは、<span class="hidden-word">無線設備操作</span>または、<span class="hidden-word">その監督を行うもの</span>である。</p>
+    <p>・登録検査等事業者制度は、無線局の<span class="hidden-word">落成後の検査</span>、<span class="hidden-word">変更検査</span>、<span class="hidden-word">定期検査</span>、において総務大臣の登録を受けたものが行う。</p>
+    <p>・検査には<span class="hidden-word">点検</span>と<span class="hidden-word">判定</span>という2つの工程がある。また<span class="hidden-word">点検員</span>は資格を持っていると行えるが、<span class="hidden-word">判定員</span>は、さらに<span class="hidden-word">実務経験</span>を要したものが行える。</p>
+    <p>・電波の質は3項目あり、①<span class="hidden-word">周波数の偏差</span>、②<span class="hidden-word">周波数の幅</span>、③<span class="hidden-word">高調波の強度等</span>がある。さらにそれぞれ規定があり、①は<span class="hidden-word">周波数帯</span></p>及び<span class="hidden-word">無線局の種別</span>ごとに規定、②は許容値が設定されており特に<span class="hidden-word">電波の型式</span>に応じて<span class="hidden-word">無線設備</span>ごとに規定、③は<span class="hidden-word">強度の許容値</span>が規定されている。</p>
+    <p>・VSAT地球局は、<span class="hidden-word">移動無線局</span>であって<span class="hidden-word">停止中</span>にのみ<span class="hidden-word">運用</span>するものとして扱われる。</p>
+    <p>・小型地球局の無線設備の条件として、送受信機の筐体は<span class="hidden-word">容易に開けること</span>ができないこと。とあり、主な変調方式は<span class="hidden-word">周波数変調</span>である。</p>
+    <p>・第一級陸上特殊無線技士は空中線電力<span class="hidden-word">500W以下</span>の多重無線設備で<span class="hidden-word">30MHz以上</span>の周波数の電波を利用するものの技術操作である。あと、<span class="hidden-word">第二級陸上特殊無線技士</span>の操作の範囲に属するもの。</p>
+    <p>・無線局は通信事項の範囲を超えて運用してはならない。しかし例外として、①<span class="hidden-word">遭難</span>通信(危険に陥った場合)、②<span class="hidden-word">緊急</span>通信(危険に陥る恐れがある場合)、③<span class="hidden-word">安全</span>通信(危険を予防する場合)、④<span class="hidden-word">非常</span>通信(危険が発生する恐れがある場合)、の通信は許可される。また、①は<span class="hidden-word">船舶又は航空機</span>（主体）が<span class="hidden-word">重大</span>（重大性）かつ、<span class="hidden-word">急迫</span>（急迫性）の危険に<span class="hidden-word">陥った</span>（現在性）場合である。②は<span class="hidden-word">船舶又は航空機</span>（主体）が<span class="hidden-word">重大</span>（重大性）かつ、<span class="hidden-word">急迫</span>（急迫性）の危険に<span class="hidden-word">陥る恐れがある</span>（現在性）場合である。③は<span class="hidden-word">船舶又は航空機</span>（主体）の航行に対する<span class="hidden-word">重大</span>（重大性）な、<span class="hidden-word">（急迫性なし）</span>（急迫性）危険を<span class="hidden-word">予防</span>（現在性）する場合である。</p>
+    <p>・罰則として、無線設備によって、<span class="hidden-word">虚偽の通信</span>を発した者は、<span class="hidden-word">3年以下の懲役又は150万円以下の罰金</span>に処する。また、無線設備の機能に障害を与えて、<span class="hidden-word">無線通信を妨害</span>した者は、<span class="hidden-word">5年以下の懲役又は250万円以下の罰金</span>に処する。</p>
+    <p>・無線通信の業務に従事する者が、<span class="hidden-word">秘密を洩らし</span>、または<span class="hidden-word">窃用</span>したときは、<span class="hidden-word">2年以下の懲役又は100万円以下の罰金</span>に処する。</p>
+    <p>・もし無線局の運用において、以下の者がいた場合罰則を受ける。<span class="hidden-word">免許状の記載事項</span>に違反して<span class="hidden-word">無線局を運用</span>した者、<span class="hidden-word">電波の発射又は運用を停止された無線局</span>を運用した者、<span class="hidden-word">技術基準適合命令</span>に違反した者、である。該当したものは、<span class="hidden-word">1年以下の懲役又は100万円以下の罰金</span>が処される。</p>
+    <p>・無線資格のない者が、<span class="hidden-word">主任従事者</span>として選任された者の監督を受けないで、<span class="hidden-word">無線局の無線設備の操作</span>を行ったとき。該当するものは<span class="hidden-word">30万円以下の罰金</span>に処される。</p>
+</body>
+</html>
+
